@@ -567,6 +567,10 @@ module.exports = {
         "loader": "raw-loader"
       },
       {
+        "test": /\.(pug|jade)$/,
+        "use": ['raw-loader', 'pug-html-loader']
+      },
+      {
         "test": /\.(eot|svg|cur)$/,
         "loader": "file-loader",
         "options": {
